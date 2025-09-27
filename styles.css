@@ -1,0 +1,140 @@
+/* Utility class for equal vertical spacing */
+.spaced {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+/* Smaller secondary logo above main logo */
+.logo-secondary {
+    max-width: 160px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    font-family: 'Verdana Pro', Verdana, Arial, sans-serif;
+    background: #f2efeaff url('Images/cyrus-crossan-2fSeJFPHCHM-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+nav {
+    width: 100%;
+    background: #172d4fff;
+    padding: 1.2rem 0;
+    box-shadow: 0 6px 8px rgba(44,62,80,0.08);
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: #f2efeaff;
+    text-decoration: none;
+    margin: 0 2.2rem;
+    font-size: 1.35rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: rgb(91, 145, 228);
+}
+h1 {
+    color: #172d4fff;
+    margin-top: 48px;
+    font-size: 2.5rem;
+}
+p, .project-desc {
+    color: #172d4fff;
+    font-size: 1.2rem;
+    background: #f2efeaff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(44,62,80,0.08);
+    margin: 16px;
+}
+.content {
+    color: #172d4fff;
+    font-size: 1.2rem;
+    background: #f2efeaff;
+    padding: 24px 32px;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(44,62,80,0.08);
+    margin: 16px auto;
+    box-sizing: border-box;
+    max-width: 4200px;
+}
+.cta-btn, button {
+    margin-top: 48px;
+    padding: 12px 32px;
+    background: #172d4fff;
+    color: #f2efeaff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 8px rgba(44,62,80,0.08);
+    transition: background 0.2s;
+}
+.cta-btn:hover, button:hover {
+    background: rgb(91, 145, 228);
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+    background: #172d4fff;
+    color: #f2efeaff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    justify-content: center;
+}
+.project-card {
+    background: #f2efeaff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    padding: 16px 24px;
+    max-width: 320px;
+    min-width: 220px;
+}
+.project-title {
+    font-size: 1.3rem;
+    color: #172d4fff;
+    margin-bottom: 8px;
+}
+.project-link {
+    color: rgb(91, 145, 228);
+    text-decoration: none;
+    font-weight: 500;
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+}
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+img.logo {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
