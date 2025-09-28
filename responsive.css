@@ -38,25 +38,6 @@
     max-width: 98vw;
     text-align: center;
   }
-  .project-card {
-    max-width: 98vw;
-    min-width: 0;
-    width: 98vw;
-    box-sizing: border-box;
-    padding: 0.7rem 1.2rem;
-    background: #f2efeaff;
-    color: #172d4fff;
-    border-radius: 12px;
-    margin: 0.5rem auto;
-    box-shadow: 0 4px 16px rgba(44,62,80,0.12);
-  }
-  .project-title, .project-desc, .project-link {
-    color: #172d4fff;
-  }
-}
-/* Responsive design for Lewis and Karr site */
-
-@media (max-width: 900px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -73,13 +54,30 @@
   }
   .logo {
     max-width: 90vw;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logo-secondary {
+    max-width: 48vw;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: block;
+    height: auto;
   }
   .content {
     max-width: 92vw;
     width: 92vw;
-    padding: 40px 24px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 24px 8px;
+    margin: 8px auto 8px auto;
   }
   .projects-list {
     flex-direction: column;
@@ -91,17 +89,32 @@
     width: 98vw;
     box-sizing: border-box;
     padding: 0.7rem 1.2rem;
+    margin: 8px auto 8px auto;
     background: #f2efeaff;
     color: #172d4fff;
     border-radius: 12px;
-    margin: 0.5rem auto;
     box-shadow: 0 4px 16px rgba(44,62,80,0.12);
   }
   .project-title, .project-desc, .project-link {
     color: #172d4fff;
   }
+  .cta-btn, button {
+    margin-top: 72px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    padding: 10px 16px;
+    font-size: 1rem;
+    width: 90vw;
+    max-width: 320px;
+    display: block;
+  }
+  #home-paragraph {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
 }
-
 @media (max-width: 600px) {
   body {
     padding: 0;
@@ -112,33 +125,58 @@
   }
   .logo {
     max-width: 98vw;
-    margin-top: 16px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logo-secondary {
+    max-width: 80vw;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: block;
+    height: auto;
   }
   h1 {
-    font-size: 1.5rem;
-    margin-top: 24px;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    margin-bottom: 4px;
   }
   .content {
     max-width: 95vw;
     width: 95vw;
-    padding: 32px 16px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 16px 4px;
+    margin: 8px auto 8px auto;
   }
   form input, form textarea {
-    margin-bottom: 24px;
-    padding: 12px;
+    margin-bottom: 16px;
+    padding: 8px;
   }
   form label {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
   input, textarea {
     font-size: 1rem;
     padding: 6px;
   }
   .cta-btn, button {
-    padding: 10px 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    padding: 8px 12px;
     font-size: 1rem;
+    width: 98vw;
+    max-width: 320px;
+    display: block;
   }
   footer {
     font-size: 0.9rem;
@@ -150,13 +188,17 @@
     width: 100vw;
     box-sizing: border-box;
     padding: 0.5rem 0.2rem;
+    margin: 8px auto 8px auto;
     background: #f2efeaff;
     color: #172d4fff;
     border-radius: 0;
-    margin: 0 auto;
     box-shadow: 0 4px 16px rgba(44,62,80,0.12);
   }
   .project-title, .project-desc, .project-link {
     color: #172d4fff;
+  }
+  #home-paragraph {
+    margin-top: 0;
+    margin-bottom: 4px;
   }
 }

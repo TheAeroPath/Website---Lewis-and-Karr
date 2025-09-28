@@ -1,15 +1,18 @@
 /* Utility class for equal vertical spacing */
 .spaced {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 /* Smaller secondary logo above main logo */
 .logo-secondary {
     max-width: 200px;
     height: auto;
     display: block;
+    margin-top:84px;
+    margin-bottom:84px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 body {
     font-family: 'Verdana Pro', Verdana, Arial, sans-serif;
@@ -77,16 +80,20 @@ p, .project-desc {
     max-width: 1400px;
 }
 .cta-btn, button {
-    margin-top: 48px;
-    padding: 12px 32px;
+    width: 50%;
+    margin-top: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 36px;
     box-sizing: border-box;
     background: #172d4fff;
     color: #f2efeaff;
     border: none;
     border-radius: 6px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
+    display: block;
     transition: background 0.2s;
 }
 .cta-btn:hover, button:hover {
@@ -157,8 +164,9 @@ img.logo {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+    
+    margin-top: 36px;
+    margin-bottom: 36px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;

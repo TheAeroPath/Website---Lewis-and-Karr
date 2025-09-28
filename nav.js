@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             footer.style.borderRadius = '12px';
                 footer.style.boxShadow = '0 -4px 16px rgba(44,62,80,0.12)';
                 footer.style.zIndex = '100';
-                footer.style.fontSize = '1rem';
+                footer.style.fontSize = '0.8rem';
                 footer.style.transition = 'background 0.3s';
             } else {
                 footer.style.position = '';
