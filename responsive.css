@@ -1,32 +1,57 @@
 /* Dropdown menu styles for mobile nav */
 @media (max-width: 900px) {
+  #menu-toggle, #nav-links, #nav-links a {
+    box-sizing: border-box;
+  }
   #menu-toggle {
     display: block;
     background: #172d4fff;
     color: #f2efeaff;
     border: none;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 1.3rem;
     padding: 0.7rem 1.2rem;
     margin: 0.5rem auto;
     cursor: pointer;
-    width: 90vw;
-    max-width: 400px;
+    width: 98vw;
+    max-width: 98vw;
   }
   #nav-links {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 98vw;
+    max-width: 98vw;
     gap: 0.5rem;
     margin: 0 auto;
+    background: rgba(23, 45, 79, 0.0); /* default transparent, JS will override */
+    min-height: 120px;
+    min-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.12);
+    transition: background 0.3s;
   }
   #nav-links a {
     display: block;
     margin: 0.5rem 0;
     font-size: 1.1rem;
-    width: 90vw;
-    max-width: 400px;
+    width: 98vw;
+    max-width: 98vw;
     text-align: center;
+  }
+  .project-card {
+    max-width: 98vw;
+    min-width: 0;
+    width: 98vw;
+    box-sizing: border-box;
+    padding: 0.7rem 1.2rem;
+    background: #f2efeaff;
+    color: #172d4fff;
+    border-radius: 12px;
+    margin: 0.5rem auto;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.12);
+  }
+  .project-title, .project-desc, .project-link {
+    color: #172d4fff;
   }
 }
 /* Responsive design for Lewis and Karr site */
@@ -38,6 +63,8 @@
     padding: 1.2rem 0;
     min-height: 64px;
     box-sizing: border-box;
+    background: transparent !important;
+    box-shadow: none;
   }
   nav a {
     margin: 0.5rem 0;
@@ -48,8 +75,11 @@
     max-width: 90vw;
   }
   .content {
-    max-width: 98vw;
-    padding: 24px 8px;
+    max-width: 92vw;
+    width: 92vw;
+    padding: 40px 24px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .projects-list {
     flex-direction: column;
@@ -58,7 +88,17 @@
   .project-card {
     max-width: 98vw;
     min-width: 0;
-    padding: 16px 8px;
+    width: 98vw;
+    box-sizing: border-box;
+    padding: 0.7rem 1.2rem;
+    background: #f2efeaff;
+    color: #172d4fff;
+    border-radius: 12px;
+    margin: 0.5rem auto;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.12);
+  }
+  .project-title, .project-desc, .project-link {
+    color: #172d4fff;
   }
 }
 
@@ -79,8 +119,18 @@
     margin-top: 24px;
   }
   .content {
-    padding: 16px 4px;
-    max-width: 100vw;
+    max-width: 95vw;
+    width: 95vw;
+    padding: 32px 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form input, form textarea {
+    margin-bottom: 24px;
+    padding: 12px;
+  }
+  form label {
+    margin-bottom: 10px;
   }
   input, textarea {
     font-size: 1rem;
@@ -93,5 +143,20 @@
   footer {
     font-size: 0.9rem;
     padding: 0.5rem 0;
+  }
+  .project-card {
+    max-width: 100vw;
+    min-width: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0.5rem 0.2rem;
+    background: #f2efeaff;
+    color: #172d4fff;
+    border-radius: 0;
+    margin: 0 auto;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.12);
+  }
+  .project-title, .project-desc, .project-link {
+    color: #172d4fff;
   }
 }

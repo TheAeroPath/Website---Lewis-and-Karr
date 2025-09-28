@@ -5,7 +5,7 @@
 }
 /* Smaller secondary logo above main logo */
 .logo-secondary {
-    max-width: 160px;
+    max-width: 200px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -40,6 +40,15 @@ nav a {
 nav a:hover {
     color: rgb(91, 145, 228);
 }
+a {
+    color: rgb(91, 145, 228);
+}
+a:hover {
+    background: rgb(91, 145, 228);
+    color: #f2efeaff;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
 h1 {
     color: #172d4fff;
     margin-top: 48px;
@@ -53,21 +62,24 @@ p, .project-desc {
     border-radius: 8px;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
     margin: 16px;
+    text-align: center;
 }
 .content {
     color: #172d4fff;
     font-size: 1.2rem;
     background: #f2efeaff;
-    padding: 24px 32px;
+    padding: 40px 32px;
     border-radius: 8px;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
-    margin: 16px auto;
+    margin: 32px auto;
     box-sizing: border-box;
-    max-width: 4200px;
+    width: 66vw;
+    max-width: 1400px;
 }
 .cta-btn, button {
     margin-top: 48px;
     padding: 12px 32px;
+    box-sizing: border-box;
     background: #172d4fff;
     color: #f2efeaff;
     border: none;
@@ -96,13 +108,14 @@ footer {
     margin-top: 24px;
     justify-content: center;
 }
-.project-card {
+.project-card, .about-card {
     background: #f2efeaff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(44,62,80,0.08);
-    padding: 16px 24px;
-    max-width: 320px;
-    min-width: 220px;
+    padding: 40px 32px;
+    margin: 32px auto;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 .project-title {
     font-size: 1.3rem;
@@ -132,9 +145,36 @@ input, textarea {
     border: 1px solid #ccc;
     font-size: 1rem;
 }
+form input, form textarea {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    padding: 12px;
+    box-sizing: border-box;
+}
 img.logo {
     max-width: 600px;
     width: 100%;
     height: auto;
     display: block;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+.contact-info {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
