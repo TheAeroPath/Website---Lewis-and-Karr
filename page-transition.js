@@ -50,5 +50,14 @@
         }
     }
     document.addEventListener('DOMContentLoaded', fadeInBody);
-    window.addEventListener('popstate', fadeInBody);
+    
+    // Fade out and reload on popstate (back/forward navigation)
+    window.addEventListener('popstate', function() {
+        document.body.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+        document.body.style.opacity = '0';
+        sessionStorage.setItem('pendingFadeIn', 'true');
+        setTimeout(function() {
+            location.reload();
+        }, 600);
+    });
 })();
