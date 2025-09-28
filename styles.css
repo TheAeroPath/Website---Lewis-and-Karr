@@ -178,3 +178,13 @@ form button {
     margin-top: 32px;
     margin-bottom: 32px;
 }
+.img-link:hover, .img-link:focus {
+    background: none !important;
+    color: inherit !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.img-link img {
+    pointer-events: none;
+}
