@@ -37,7 +37,7 @@
     });
 
     // Fade in on page load with 2 second animation
-    document.addEventListener('DOMContentLoaded', function() {
+    function fadeInBody() {
         var isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '';
         if (isIndex || sessionStorage.getItem('pendingFadeIn')) {
             document.body.style.transition = 'opacity 2s cubic-bezier(0.4, 0, 0.2, 1)';
@@ -48,5 +48,7 @@
         } else {
             document.body.style.opacity = '1';
         }
-    });
+    }
+    document.addEventListener('DOMContentLoaded', fadeInBody);
+    window.addEventListener('popstate', fadeInBody);
 })();
