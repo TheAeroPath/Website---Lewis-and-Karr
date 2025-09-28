@@ -11,8 +11,8 @@
         }, 600);
     }
 
-    // Animate nav link clicks
     document.addEventListener('DOMContentLoaded', function() {
+        // Animate nav link clicks
         Array.from(document.querySelectorAll('a')).forEach(function(link) {
             // Only animate internal links
             if (link.hostname === window.location.hostname && link.getAttribute('href') && !link.getAttribute('target')) {
@@ -26,6 +26,14 @@
                 });
             }
         });
+        // Animate Contact Us button on index
+        var ctaBtn = document.querySelector('.cta-btn');
+        if (ctaBtn && window.location.pathname.endsWith('index.html')) {
+            ctaBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                animatePageTransition('contact.html');
+            });
+        }
     });
 
     // Fade in on page load with 2 second animation
