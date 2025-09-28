@@ -120,6 +120,9 @@
   .main-content {
     padding-bottom: 96px;
   }
+  h1 {
+    text-align: center;
+  }
 }
 @media (max-width: 600px) {
     #menu-toggle, #nav-links, #nav-links a {
@@ -241,5 +244,8 @@
   }
   .main-content {
     padding-bottom: 96px;
+  }
+  h1 {
+    text-align: center;
   }
 }
