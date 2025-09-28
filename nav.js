@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 footer.style.boxShadow = '0 -4px 16px rgba(44,62,80,0.12)';
                 footer.style.zIndex = '100';
                 footer.style.fontSize = '0.8rem';
-                footer.style.transition = 'background 0.3s';
             } else {
                 footer.style.position = '';
                 footer.style.left = '';
@@ -63,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 footer.style.boxShadow = '';
                 footer.style.zIndex = '';
                 footer.style.fontSize = '';
-                footer.style.transition = '';
             }
     }
     window.addEventListener('resize', setFooterMobile);

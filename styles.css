@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    opacity: 0;
 }
 nav {
     width: 100%;
@@ -38,7 +39,7 @@ nav a {
     text-decoration: none;
     margin: 0 2.2rem;
     font-size: 1.35rem;
-    transition: color 0.2s;
+    /* transition removed to avoid conflict with page transitions */
 }
 nav a:hover {
     color: rgb(91, 145, 228);
@@ -50,7 +51,7 @@ a:hover {
     background: rgb(91, 145, 228);
     color: #f2efeaff;
     border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
+    /* transition removed to avoid conflict with page transitions */
 }
 h1 {
     color: #172d4fff;
@@ -94,7 +95,7 @@ p, .project-desc {
     cursor: pointer;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
     display: block;
-    transition: background 0.2s;
+    /* transition removed to avoid conflict with page transitions */
 }
 .cta-btn:hover, button:hover {
     background: rgb(91, 145, 228);
