@@ -65,7 +65,6 @@
     background: rgba(255,255,255,0.5);
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(44,62,80,0.10);
-  /* No opacity or transition here to avoid conflict with page transitions */
   }
   .logo-secondary {
     max-width: 48vw;
@@ -117,6 +116,9 @@
   #home-paragraph {
     margin-top: 24px;
     margin-bottom: 60px;
+  }
+  .main-content {
+    padding-bottom: 96px;
   }
 }
 @media (max-width: 600px) {
@@ -236,5 +238,8 @@
   #home-paragraph {
     margin-top: 24px;
     margin-bottom: 60px;
+  }
+  .main-content {
+    padding-bottom: 96px;
   }
 }
