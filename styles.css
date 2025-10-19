@@ -1,22 +1,22 @@
 /* Utility class for equal vertical spacing */
 .spaced {
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 /* Smaller secondary logo above main logo */
 .logo-secondary {
-    max-width: 200px;
+    max-width: 192px;
     height: auto;
     display: block;
-    margin-top:84px;
-    margin-bottom:84px;
+    margin-top: 96px;
+    margin-bottom: 96px;
     margin-left: auto;
     margin-right: auto;
     
 }
 body {
     font-family: 'Verdana Pro', Verdana, Arial, sans-serif;
-    background: #f2efeaff url('Images/cyrus-crossan-2fSeJFPHCHM-unsplash.jpg') no-repeat center center fixed;
+    background: #f2efeaff url('Images/cyrus-crossan-2fSeJFPHCHM-unsplash.jpg') no-repeat center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -29,10 +29,14 @@ body {
 nav {
     width: 100%;
     background: #172d4fff;
-    padding: 1.2rem 0;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
+    padding: 1.2rem 0;
+    margin-bottom: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
 }
 nav a {
     color: #f2efeaff;
@@ -41,8 +45,40 @@ nav a {
     font-size: 1.35rem;
     /* transition removed to avoid conflict with page transitions */
 }
+.nav-links {   
+    margin: auto; 
+    flex-shrink: 0;
+}
+.nav-logo {
+    width: 48px;
+    height: auto;
+    object-fit: contain;
+    margin: -8px auto -8px 24px;
+}
+.nav-logo-right {
+    width: 192px;
+    height: auto; 
+    object-fit: contain;
+    margin: 0 24px 0 auto;
+}
+.flex-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.flex-wrapper:first-child {
+    justify-content: flex-start;
+}
+.flex-wrapper:last-child {
+    justify-content: flex-end;
+}
+.center-wrapper {
+    justify-content: center;
+}
+
 nav a:hover {
     color: rgb(91, 145, 228);
+    color: #f2efeaff;
 }
 a {
     color: rgb(91, 145, 228);
@@ -52,6 +88,12 @@ a:hover {
     color: #f2efeaff;
     border-radius: 4px;
     /* transition removed to avoid conflict with page transitions */
+}
+.main-content {
+    flex: 1;
+    box-sizing: border-box;
+    padding-top: 96px;
+    padding-bottom: 48px;
 }
 h1 {
     color: #172d4fff;
@@ -63,20 +105,20 @@ p, .project-desc {
     color: #172d4fff;
     font-size: 1.2rem;
     background: #f2efeaff;
-    padding: 16px 24px;
+    padding: 24px 24px;
     border-radius: 8px;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
-    margin: 16px;
+    margin: 24px;
     text-align: center;
 }
 .content {
     color: #172d4fff;
     font-size: 1.2rem;
     background: #f2efeaff;
-    padding: 40px 32px;
+    padding: 40px 48px;
     border-radius: 8px;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
-    margin: 32px auto;
+    margin: 48px auto;
     box-sizing: border-box;
     width: 66vw;
     max-width: 1400px;
@@ -121,8 +163,8 @@ footer {
     background: #f2efeaff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(44,62,80,0.08);
-    padding: 40px 32px;
-    margin: 32px auto;
+    padding: 24px 48px;
+    margin: 48px auto;
     max-width: 600px;
     box-sizing: border-box;
 }
@@ -130,11 +172,15 @@ footer {
     font-size: 1.3rem;
     color: #172d4fff;
     margin-bottom: 8px;
+    text-align: center;
 }
 .project-link {
     color: rgb(91, 145, 228);
     text-decoration: none;
     font-weight: 500;
+    text-align: center;
+    display: block;
+    
 }
 .project-link:hover {
     text-decoration: underline;
@@ -168,7 +214,7 @@ img.logo {
     display: block;
     
     margin-top: 36px;
-    margin-bottom: 36px;
+    margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;

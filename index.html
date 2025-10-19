@@ -11,14 +11,32 @@
 </head>
 <body>
 	<nav>
-		<button id="menu-toggle" aria-label="Open menu" style="display:none;">
+		<div class="flex-wrapper">
+			<a href="index.html" class="img-link">
+				<img src="Images\Logo_Invert_xBG_Lewis and Karr.png" alt="Lewis and Karr Short Logo" class="nav-logo">
+			</a>
+		</div>		
+		<div class="menu-wrapper center-wrapper hide-on-desktop">	
+			<button id="menu-toggle" aria-label="Open menu">
 			&#9776; Menu
-		</button>
-		<div id="nav-links">
+			</button>
+			<div id="nav-links" class="nav-links center-wrapper">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="projects.html">Projects</a>
+			</div>
+		</div>				
+		<div id="nav-links" class="nav-links flex-wrapper center-wrapper hide-on-mobile" >
 			<a href="index.html">Home</a>
 			<a href="about.html">About</a>
 			<a href="contact.html">Contact</a>
 			<a href="projects.html">Projects</a>
+		</div>
+		<div class="flex-wrapper">
+			<a href="index.html" class="img-link">
+				<img src="Images\Full_Logo_Invert_xBG_Lewis and Karr.png" alt="Lewis and Karr Secondary Logo" class="nav-logo-right">
+			</a>
 		</div>
 	</nav>
 	<main class="main-content">
@@ -32,7 +50,7 @@
 		</div>
 	</main>
 	<footer>
-		&copy; 2025 Lewis and Karr. All rights reserved.<br>
+		&copy; 2025 LK & Associates, LLP. All rights reserved.<br>
 	Contact: <a href="mailto:info@lewisandkarr.com">info@lewisandkarr.com</a> | (866) 648-4968 x802 | Virgin Islands
 	</footer>
 	<script src="nav.js"></script>
