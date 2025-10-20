@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    max-width: 100vh;
     opacity: 0;
 }
 nav {
@@ -41,25 +42,25 @@ nav {
 nav a {
     color: #f2efeaff;
     text-decoration: none;
-    margin: 0 2.2rem;
-    font-size: 1.35rem;
-    /* transition removed to avoid conflict with page transitions */
+    margin: auto 1vw;
+    font-size: 2.5vw;
+    flex-shrink: 1;    
 }
 .nav-links {   
     margin: auto; 
     flex-shrink: 0;
 }
 .nav-logo {
-    width: 48px;
+    max-width: 48px;
     height: auto;
     object-fit: contain;
-    margin: -8px auto -8px 24px;
+    margin: 0 5vw;
 }
 .nav-logo-right {
-    width: 192px;
+    max-width: 192px;
     height: auto; 
     object-fit: contain;
-    margin: 0 24px 0 auto;
+    margin: 0 5vw;
 }
 .flex-wrapper {
     flex: 1;
@@ -75,6 +76,7 @@ nav a {
 .center-wrapper {
     justify-content: center;
 }
+
 
 nav a:hover {
     color: rgb(91, 145, 228);
@@ -151,6 +153,9 @@ footer {
     text-align: center;
     padding: 1rem 0;
     font-size: 1rem;
+    left: 0;
+    bottom: 0;
+    position: fixed;
 }
 .projects-list {
     display: flex;

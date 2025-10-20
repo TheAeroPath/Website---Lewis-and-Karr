@@ -196,7 +196,7 @@
     max-height: 36px;
     object-fit: contain;
     display: block;
-    margin: auto;
+    margin: .5rem 2rem .5rem -.5rem;
   }
   .nav-logo-right {
     max-width: 144px;
@@ -211,7 +211,7 @@
     min-height: 120px;
     gap: 0.5rem;
     margin: 0 auto;
-    background: rgba(23, 45, 79, 0.0); /* default transparent, JS will override */
+    background: rgba(23, 45, 79, 0.0);
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(44,62,80,0.12);
   }
@@ -225,18 +225,17 @@
   #menu-toggle {
     color: #f2efeaff;
     font-size: 1.5rem;
-    margin: .5rem 0 .5rem 2rem;
+    margin: .5rem 0 .5rem 1rem;
     cursor: pointer;
     background: none;
     border: none;
     width: auto;
-    text-align: center;
     display: block;
   }
   .logo {
     max-width: 90vw;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     padding-top: 12px;
@@ -248,9 +247,9 @@
     box-shadow: 0 4px 16px rgba(44,62,80,0.10);
   }
   .logo-secondary {
-    max-width: 48vw;
-    margin-top: 48px;
-    margin-bottom: 24px;
+    max-width: 45vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -270,10 +269,22 @@
     padding-bottom: 96px;
   }
   #home-paragraph {
-    margin-top: 0px;
-    margin-bottom: 48px;
+    margin-top: 0;
+    margin-bottom: 5vh;
   }
-  .cta-btn, button {
+  button {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    padding: 10px 16px;
+    font-size: 1.1rem;
+    width: 90vw;
+    max-width: 320px;
+    display: block;
+  }
+  .cta-btn {
+    margin-top: 10vh;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
