@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
     function setMobileUI() {
-        const isMobile = window.innerWidth <= 900;
+        const isMobile = window.innerWidth <= 600;
         menuToggle.style.display = isMobile ? 'block' : 'none';
         navLinks.style.display = isMobile ? 'none' : 'flex';
         navLinks.style.opacity = '1';
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function setFooterMobile() {
         const footer = document.querySelector('footer');
         if (!footer) return;
-        const isMobile = window.innerWidth <= 900;
+        const isMobile = window.innerWidth <= 600;
             if (isMobile) {
                 footer.style.position = 'fixed';
                 footer.style.left = '50%';
