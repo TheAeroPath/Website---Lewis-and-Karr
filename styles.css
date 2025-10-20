@@ -1,18 +1,17 @@
 /* Utility class for equal vertical spacing */
 .spaced {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 /* Smaller secondary logo above main logo */
 .logo-secondary {
     max-width: 192px;
     height: auto;
     display: block;
-    margin-top: 96px;
-    margin-bottom: 96px;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto; 
 }
 body {
     font-family: 'Verdana Pro', Verdana, Arial, sans-serif;
@@ -41,9 +40,9 @@ nav {
 nav a {
     color: #f2efeaff;
     text-decoration: none;
-    margin: auto 1vw;
-    font-size: 2vw;
-    flex-shrink: 1;    
+    margin: auto;
+    font-size: 1.4vw;
+        
 }
 .nav-links {   
     margin: auto; 
@@ -124,7 +123,7 @@ p, .project-desc {
     width: 66vw;
     max-width: 1400px;
 }
-.cta-btn, button {
+button {
     width: 50%;
     margin-top: 108px;
     margin-left: auto;
@@ -140,6 +139,22 @@ p, .project-desc {
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
     display: block;
     /* transition removed to avoid conflict with page transitions */
+}
+.cta-btn{
+    width: 50%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 36px;
+    box-sizing: border-box;
+    background: #172d4fff;
+    color: #f2efeaff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 6px 8px rgba(44,62,80,0.08);
+    display: block; 
 }
 .cta-btn:hover, button:hover {
     background: rgb(91, 145, 228);
@@ -211,14 +226,14 @@ form input, form textarea {
     padding: 12px;
     box-sizing: border-box;
 }
-img.logo {
+.logo {
     max-width: 600px;
     width: 100%;
     height: auto;
     display: block;
     
-    margin-top: 36px;
-    margin-bottom: 48px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
