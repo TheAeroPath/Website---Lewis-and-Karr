@@ -274,7 +274,7 @@
     margin-bottom: 48px;
   }
   .cta-btn, button {
-    margin-bottom: 50vh;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     position: static;
