@@ -196,13 +196,13 @@
     max-height: 36px;
     object-fit: contain;
     display: block;
-    margin: .5rem 1rem;
+    margin: auto;
   }
   .nav-logo-right {
     max-width: 144px;
     object-fit: contain;
     display: block;
-    margin: .5rem 1rem;
+    margin: .5rem 2rem;
   }
   #nav-links {
     align-items: center;
@@ -224,8 +224,8 @@
   }
   #menu-toggle {
     color: #f2efeaff;
-    font-size: auto;
-    margin: auto;
+    font-size: 1.5rem;
+    margin: .5rem 0 .5rem 2rem;
     cursor: pointer;
     background: none;
     border: none;
