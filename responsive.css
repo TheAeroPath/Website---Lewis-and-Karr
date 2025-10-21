@@ -26,172 +26,32 @@
   }
 }
 /* Dropdown menu styles for mobile nav */
-/*
-@media (max-width: 900px) {
-  #menu-toggle, #nav-links, #nav-links a {
-    box-sizing: border-box;
-  }
-  #menu-toggle {
-    display: flex;
-    background: #172d4fff;
-    color: #f2efeaff;
-    border: none;
-    border-radius: 12px;
-    font-size: 1.3rem;
-    padding: 0.7rem 1.2rem;
-    margin: 0.5rem auto;
-    cursor: pointer;
-    width: 98vw;
-    max-width: 98vw;
-  }
-  #nav-links {
-    flex-direction: column;
-    align-items: center;
-    width: 98vw;
-    max-width: 98vw;
-    gap: 0.5rem;
-    margin: 0 auto;
-    background: rgba(23, 45, 79, 0.0);
-    min-height: 120px;
-    min-width: 200px;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(44,62,80,0.12);
-  }
-  #nav-links a {
-    display: block;
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-    width: 98vw;
-    max-width: 98vw;
-    text-align: center;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.2rem 0;
-    min-height: 64px;
-    box-sizing: border-box;
-    background: transparent !important;
-    box-shadow: none;
-  }
-  nav a {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-    display: block;
-  }
-  .logo {
-    max-width: 90vw;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 0;
-    padding-right: 0;
-    background: rgba(255,255,255,0.5);
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
-  }
-  .logo-secondary {
-    max-width: 48vw;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    display: block;
-    height: auto;
-  }
-  .content {
-    max-width: 92vw;
-    width: 92vw;
-    padding: 24px 8px;
-    margin: 8px auto 8px auto;
-  }
-  .projects-list {
-    flex-direction: column;
-    gap: 16px;
-  }
-  .project-card {
-    max-width: 98vw;
-    min-width: 0;
-    width: 98vw;
-    box-sizing: border-box;
-    padding: 0.7rem 1.2rem;
-    margin: 8px auto 8px auto;
-    background: #f2efeaff;
-    color: #172d4fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(44,62,80,0.12);
-  }
-  .project-title, .project-desc, .project-link {
-    color: #172d4fff;
-  }
-  .cta-btn, button {
-    margin-top: 72px;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    position: static;
-    padding: 10px 16px;
-    font-size: 1rem;
-    width: 90vw;
-    max-width: 320px;
-    display: block;
-  }
-  #home-paragraph {
-    margin-top: 24px;
-    margin-bottom: 60px;
-  }
-  .main-content {
-    padding-bottom: 96px;
-  }
-  h1 {
-    text-align: center;
-  }
-}
-*/
 @media (max-width: 600px) {
   nav {
-    width: 98vw;
+    width: 95vw;
     min-height: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin: 3vw;
     background: transparent !important;
     box-shadow: none;
   }
   nav a {
     margin: 0.5rem 0;
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
   .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 98vw;
+    width: 95vw;
     min-height: 36px;
     background: #172d4fff;
     border-radius: 12px;
     margin-bottom: 6px;
     box-sizing: border-box;
   }
-   /* .nav-container {
-    display: grid;
-    grid-template-columns: minmax(36px, 1fr) auto minmax(96px, 1fr);
-    align-items: center;
-    width: 98vw;
-    max-width: 98vw;
-    background: #172d4fff;
-    padding: 0.5rem;
-    border-radius: 12px;
-    margin-bottom: 0.5rem;
-    box-sizing: border-box;
-    gap: 0.5rem;
-  } */
   .nav-logo {
     max-height: 36px;
     object-fit: contain;
@@ -256,17 +116,56 @@
     display: block;
     height: auto;
   }
-  .content {
-    max-width: 92vw;
-    width: 92vw;
-    padding: 24px 8px;
-    margin: 8px auto 8px auto;
+  .content-blue-bg {
+    font-size: .8rem;
+    background: rgba(23, 45, 79, 0.5);
+    padding: 1vh 3vw;
+    margin: 3vh auto;
+    max-width: 93vw;
   }
-  h1 {
-    text-align: center;
+  .content {
+    max-width: 97vw;
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
   }
   .main-content {
     padding-bottom: 96px;
+  }
+  .home-spaced {
+    margin: 5vh auto;
+  }
+  .spaced {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  h1 {
+    color: #172d4fff;
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin: auto;
+  }
+  h3{
+    font-size: .9rem;
+    margin: auto;
+  }
+  h4 {
+    font-size: .6rem;
+    color: rgb(0, 0, 0);
+    margin: auto;
+  }
+  .grid-container {
+      margin-top: 1vh;
+  }
+  .grid-item h2, .grid-item h4, .grid-item h3 {
+    margin: .3vh;
+  }
+  .item-4 {
+    grid-column: 1 / span 2;
+  }
+  .grid-item p {
+    font-size: .8rem;
   }
   #home-paragraph {
     margin-top: 0;

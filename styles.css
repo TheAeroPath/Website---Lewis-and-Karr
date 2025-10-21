@@ -30,7 +30,6 @@ nav {
     width: 100vw;
     background: #172d4fff;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
-    padding: 1.2rem 0;
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -40,25 +39,24 @@ nav {
 nav a {
     color: #f2efeaff;
     text-decoration: none;
-    margin: auto;
-    font-size: 1.4vw;
-        
+    margin: 1vw;
+    font-size: 1.2rem        
 }
 .nav-links {   
     margin: auto; 
     flex-shrink: 0;
 }
 .nav-logo {
-    max-width: 48px;
+    max-width: 5vh;
     height: auto;
     object-fit: contain;
-    margin: 0 5vw;
+    margin: auto 1vw auto 3vw;
 }
 .nav-logo-right {
-    max-width: 192px;
-    height: auto; 
+    width: auto;
+    max-height: 3vh; 
     object-fit: contain;
-    margin: 0 5vw;
+    margin: auto 3vw auto 1vw;
 }
 .flex-wrapper {
     flex: 1;
@@ -71,11 +69,15 @@ nav a {
 .flex-wrapper:last-child {
     justify-content: flex-end;
 }
+.inner-center-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 2;
+}
 .center-wrapper {
     justify-content: center;
 }
-
-
 nav a:hover {
     color: rgb(91, 145, 228);
     color: #f2efeaff;
@@ -90,38 +92,41 @@ a:hover {
     /* transition removed to avoid conflict with page transitions */
 }
 .main-content {
-    flex: 1;
-    box-sizing: border-box;
-    padding-top: 96px;
-    padding-bottom: 48px;
-}
-h1 {
-    color: #172d4fff;
-    margin-top: 48px;
-    font-size: 2.5rem;
-    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 p, .project-desc {
-    color: #172d4fff;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     background: #f2efeaff;
     padding: 24px 24px;
     border-radius: 8px;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
-    margin: 24px;
+    margin: 1vh 2vh;
     text-align: center;
+    box-sizing: border-box;
+}
+.content-blue-bg {
+    color: #f2efeaff;
+    font-size: 1.2rem;
+    background: rgba(23, 45, 79, 0.5);
+    padding: 1vh 3vw;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(44,62,80,0.08);
+    margin: 5vh auto;
+    box-sizing: border-box;
+    max-width: 93vw;
 }
 .content {
     color: #172d4fff;
     font-size: 1.2rem;
-    background: #f2efeaff;
-    padding: 40px 48px;
+    background: rgba(242, 239, 234, 0.9);
+    padding: 1vh 1vw;
     border-radius: 8px;
     box-shadow: 0 6px 8px rgba(44,62,80,0.08);
-    margin: 48px auto;
+    margin: 3vh auto;
+    max-width: 75vw;
     box-sizing: border-box;
-    width: 66vw;
-    max-width: 1400px;
 }
 button {
     width: 50%;
@@ -141,11 +146,9 @@ button {
     /* transition removed to avoid conflict with page transitions */
 }
 .cta-btn{
-    width: 50%;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px 36px;
+    width: 15vw;
+    margin: 10vh auto;
+    padding: 1vh 3vw;
     box-sizing: border-box;
     background: #172d4fff;
     color: #f2efeaff;
@@ -263,3 +266,46 @@ form button {
 .img-link img {
     pointer-events: none;
 }
+.headshots {
+    max-width: 20vw;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(44,62,80,0.4);
+    margin: 2vh auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vh;
+    justify-content: center;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+h1 {
+    color: #172d4fff;
+    margin-top: 5vh;
+}
+h2 {
+    margin: auto;
+}
+h3{
+    margin: auto;
+}
+h4 {
+    color: rgb(0, 0, 0);
+    margin: auto;
+}
+.grid-item h2, .grid-item h4, .grid-item h3 {
+    margin: .4vh;
+}
+.p-about {
+    font-size: 1rem;
+}
+
