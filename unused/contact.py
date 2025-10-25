@@ -27,7 +27,7 @@ def submit_form():
     msg['Subject'] = subject
     msg['From'] = email
 
-    with smtplib.SMTP('localhost', 25) as server:
+    with smtplib.SMTP('localhost', 587) as server:
         server.starttls()
         server.login(to, 'Rihvoc-vaxwos-2gocvo')
         server.send_message(msg, email, to)
